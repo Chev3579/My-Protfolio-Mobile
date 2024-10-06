@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="Home_Mobile.css">
+    <script src="https://kit.fontawesome.com/7a945aa41d.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/7a945aa41d.js" crossorigin="anonymous"></script>
+</head>
+
+  <body>
+<main>
+<div class="button-next-back">
+    <!-- ปุ่ม Next -->
+<a href="Profile.html"><button class="learn-more">
+  <span class="circle" aria-hidden="true">
+  <span class="icon arrow"></span>
+  </span>
+  <span class="button-text">Next</span>
+</button></a>
+
+<!-- ปุ่ม Back -->
+<a href="Certificates.html" target="_self">
+  <button class="backward">
+      <span class="circle" aria-hidden="true">
+      <span class="icon arrow"></span>
+      </span>
+      <span class="button-text">Back</span>
+    </button>
+</a>
+</div>
+<div class="wrapper">
+  <div class="card-swite">
+    
+  </div>
+</div>
+<div class="navigation">
+  <ul>
+      <li class="list active">
+          <a href="Home_Mobile.html">
+              <span class="icon"><i class="fa-solid fa-house-chimney"></i></span>
+              <span class="text">Home</span>
+          </a>
+      </li>
+      <li class="list">
+          <a href="Profile.html">
+              <span class="icon"><i class="fa-solid fa-user"></i></span>
+              <span class="text">Profile</span>
+          </a>
+      </li>
+      <li class="list">
+          <a href="Education.html">
+              <span class="icon"><i class="fa-solid fa-school"></i></span>
+              <span class="text">Education</span>
+          </a>
+      </li>
+      <li class="list">
+          <a href="Certificates.html">
+              <span class="icon"><i class="fa-solid fa-certificate"></i></span>
+              <span class="text">Certificates</span>
+          </a>
+      </li>
+      <div class="indicator"></div>
+  </ul>
+</div>
+</main>
+  <script>
+    const list = document.querySelectorAll('.list');
+    function activeLink(){
+      list.forEach((item) =>item.classList.remove('active'));
+      this.classList.add('active')
+    }
+    list.forEach((item)=> item.addEventListener('click', activeLink))
+  </script>
+  </body>
+</html>
